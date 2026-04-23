@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonWalls | Premium High-Res Wallpapers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">NEON<span>WALLS</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="#">Upload</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Download High Quality Wallpapers</h1>
+            <p>The ultimate collection of 4K, Abstract, and Minimalist backgrounds.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for your next vibe...">
+            </div>
+        </div>
+    </section>
+
+    <section class="categories-container">
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="categories">
+            <div class="cat-pill">Nature</div>
+            <div class="cat-pill">Anime</div>
+            <div class="cat-pill">Cars</div>
+            <div class="cat-pill">Abstract</div>
+            <div class="cat-pill">Minimal</div>
+            <div class="cat-pill">Cyberpunk</div>
+        </div>
+    </section>
+
+    <main class="gallery-container">
+        <div class="wallpaper-grid">
+            <div class="wall-card">
+                <img src="https://picsum.photos/id/10/800/600" alt="Wallpaper">
+                <div class="overlay">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="wall-card">
+                <img src="https://picsum.photos/id/103/800/600" alt="Wallpaper">
+                <div class="overlay">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="wall-card">
+                <img src="https://picsum.photos/id/111/800/600" alt="Wallpaper">
+                <div class="overlay">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="wall-card">
+                <img src="https://picsum.photos/id/133/800/600" alt="Wallpaper">
+                <div class="overlay">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="wall-card">
+                <img src="https://picsum.photos/id/145/800/600" alt="Wallpaper">
+                <div class="overlay">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+            <div class="wall-card">
+                <img src="https://picsum.photos/id/160/800/600" alt="Wallpaper">
+                <div class="overlay">
+                    <button class="download-btn">Download</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 NeonWalls. Inspired by modern aesthetics.</p>
+    </footer>
+
+</body>
+</html>
+/* Custom Variables for easy theme management */
+:root {
+    --bg-dark: #0a0b10;
+    --bg-card: #161b22;
+    --accent-neon: #00f2ff;
+    --text-main: #e6edf3;
+    --text-dim: #8b949e;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(10, 11, 16, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--accent-neon);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dim);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--accent-neon);
+}
+
+/* Hero Section */
+.hero {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), var(--bg-dark)), 
+                url('https://images.unsplash.com/photo-1614850523296-e8c0d99d214f?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #fff, var(--accent-neon));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.search-bar input {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 1px solid #30363d;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    outline: none;
+    backdrop-filter: blur(10px);
+}
+
+/* Categories */
+.categories-container {
+    padding: 40px 5%;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cat-pill {
+    padding: 8px 20px;
+    background: var(--bg-card);
+    border: 1px solid #30363d;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.cat-pill:hover {
+    border-color: var(--accent-neon);
+    color: var(--accent-neon);
+    box-shadow: 0 0 10px rgba(0, 242, 255, 0.2);
+}
+
+/* Responsive Grid */
+.gallery-container {
+    padding: 0 5% 60px 5%;
+}
+
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.wall-card {
+    position: relative;
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--bg-card);
+    box-shadow: var(--shadow);
+}
+
+.wall-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Hover Effects */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.wall-card:hover img {
+    transform: scale(1.1);
+}
+
+.wall-card:hover .overlay {
+    opacity: 1;
+}
+
+.download-btn {
+    padding: 12px 25px;
+    background: var(--accent-neon);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+
+.wall-card:hover .download-btn {
+    transform: translateY(0);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #30363d;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplification for pure CSS mobile */
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .wallpaper-grid {
+        grid-template-columns: 1fr;
+    }
+}
